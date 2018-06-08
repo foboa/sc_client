@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+        ">
+	<!-- 使用multicast广播注册中心暴露服务地址
+	 <dubbo:registry address="multicast://224.5.6.7:1234" /> 
+	 -->
+	<!-- 使用zookeeper注册中心暴露服务地址 url="192.168.150.3:21900"
+	url="127.0.0.1:20992
+	<dubbo:registry group="dev" address="zookeeper://127.0.0.1:2181" />
+	
+ 	
+ 	<dubbo:reference id="lnAppOperationService" interface="com.sc.api.service.LnAppOperationService" url="127.0.0.1:20992" />
+    <dubbo:reference id="lnAppScoreDubboService" interface="com.sc.api.service.LnAppScoreDubboService" url="127.0.0.1:20992" />
+    <dubbo:reference id="custOperationService" interface="com.sc.api.service.CustOperationService" url="127.0.0.1:20992" />
+    <dubbo:reference id="lnAppContactInfoOperationService" interface="com.sc.api.service.LnAppContactInfoOperationService" url="127.0.0.1:20992" />
+ 	<dubbo:reference id="quotaOperationService" interface="com.sc.api.service.QuotaOperationService" url="127.0.0.1:20992" />
+ 	<dubbo:reference interface="com.sc.api.service.CustAccOperationService" id="custAccOperationService" timeout="60000" url="127.0.0.1:20992"/> 
+	<dubbo:reference interface="com.sc.api.service.LnAppCalcOperationService" id="lnAppCalcOperationService" timeout="60000" url="127.0.0.1:20992"/>
+ 	-->
+	<dubbo:reference id="task4HyperService" interface="com.hm.service.Task4HyperService" check="false" url="192.168.150.236:20899" retries="0"/>
+</beans>
