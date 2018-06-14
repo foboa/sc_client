@@ -21,6 +21,12 @@
  	<dubbo:reference id="quotaOperationService" interface="com.sc.api.service.QuotaOperationService" url="127.0.0.1:20992" />
  	<dubbo:reference interface="com.sc.api.service.CustAccOperationService" id="custAccOperationService" timeout="60000" url="127.0.0.1:20992"/> 
 	<dubbo:reference interface="com.sc.api.service.LnAppCalcOperationService" id="lnAppCalcOperationService" timeout="60000" url="127.0.0.1:20992"/>
- 	-->
+ 	--><!-- 本地 192.168.150.116 开发机 192.168.200.238 -->
 	<dubbo:reference id="task4HyperService" interface="com.hm.service.Task4HyperService" check="false" url="192.168.150.236:20899" retries="0"/>
+
+    <dubbo:reference id="socialSecurityService" interface="com.eip.service.biz.socialsecurity.inf.SocialSecurityService" check="false" url="192.168.200.238:32036" retries="0"/>
+	<dubbo:reference id="juxlApiService" interface="com.eip.service.biz.juxl.inf.JuxlApiService" check="false" url="192.168.200.238:32036" retries="0"/>
+	<dubbo:reference id="bjAntiFraudService" interface="com.eip.service.biz.bjantifraud.inf.BjAntiFraudService" check="false" url="192.168.200.238:32036" retries="0"/>
+    <dubbo:reference id="xyCreditService" interface="com.eip.service.biz.xinyancredit.inf.XyCreditService" check="false" url="192.168.200.238:32036" retries="0"/>
+
 </beans>

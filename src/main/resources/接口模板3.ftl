@@ -5,16 +5,16 @@
 <o:DocumentProperties>
     <o:Author>苏冠铤</o:Author>
     <o:LastAuthor>苏冠铤</o:LastAuthor>
-    <o:Revision>8</o:Revision>
-    <o:TotalTime>10</o:TotalTime>
+    <o:Revision>9</o:Revision>
+    <o:TotalTime>12</o:TotalTime>
     <o:Created>2018-06-05T04:24:00Z</o:Created>
-    <o:LastSaved>2018-06-05T10:58:00Z</o:LastSaved>
-    <o:Pages>1</o:Pages>
+    <o:LastSaved>2018-06-11T11:19:00Z</o:LastSaved>
+    <o:Pages>2</o:Pages>
     <o:Words>37</o:Words>
-    <o:Characters>213</o:Characters>
+    <o:Characters>212</o:Characters>
     <o:Lines>1</o:Lines>
     <o:Paragraphs>1</o:Paragraphs>
-    <o:CharactersWithSpaces>249</o:CharactersWithSpaces>
+    <o:CharactersWithSpaces>248</o:CharactersWithSpaces>
     <o:Version>15</o:Version>
 </o:DocumentProperties>
 <w:fonts>
@@ -41,6 +41,13 @@
         <w:family w:val="auto" />
         <w:pitch w:val="variable" />
         <w:sig w:usb-0="00000003" w:usb-1="288F0000" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="00040001" w:csb-1="00000000" />
+    </w:font>
+    <w:font w:name="Calibri Light">
+        <w:panose-1 w:val="020F0302020204030204" />
+        <w:charset w:val="00" />
+        <w:family w:val="Swiss" />
+        <w:pitch w:val="variable" />
+        <w:sig w:usb-0="E0002AFF" w:usb-1="C000247B" w:usb-2="00000009" w:usb-3="00000000" w:csb-0="000001FF" w:csb-1="00000000" />
     </w:font>
     <w:font w:name="Calibri">
         <w:panose-1 w:val="020F0502020204030204" />
@@ -244,6 +251,114 @@
             <w:lang w:val="EN-US" w:fareast="ZH-CN" w:bidi="AR-SA" />
         </w:rPr>
     </w:style>
+    <w:style w:type="paragraph" w:styleId="1">
+        <w:name w:val="heading 1" />
+        <wx:uiName wx:val="标题 1" />
+        <w:basedOn w:val="a" />
+        <w:next w:val="a" />
+        <w:link w:val="1Char" />
+        <w:rsid w:val="005700E5" />
+        <w:pPr>
+            <w:keepNext />
+            <w:keepLines />
+            <w:spacing w:before="340" w:after="330" w:line="578" w:line-rule="auto" />
+            <w:outlineLvl w:val="0" />
+        </w:pPr>
+        <w:rPr>
+            <wx:font wx:val="Calibri" />
+            <w:b />
+            <w:b-cs />
+            <w:kern w:val="44" />
+            <w:sz w:val="44" />
+            <w:sz-cs w:val="44" />
+        </w:rPr>
+    </w:style>
+    <w:style w:type="paragraph" w:styleId="2">
+        <w:name w:val="heading 2" />
+        <wx:uiName wx:val="标题 2" />
+        <w:basedOn w:val="a" />
+        <w:next w:val="a" />
+        <w:link w:val="2Char" />
+        <w:rsid w:val="005700E5" />
+        <w:pPr>
+            <w:keepNext />
+            <w:keepLines />
+            <w:spacing w:before="260" w:after="260" w:line="416" w:line-rule="auto" />
+            <w:outlineLvl w:val="1" />
+        </w:pPr>
+        <w:rPr>
+            <w:rFonts w:ascii="Calibri Light" w:h-ansi="Calibri Light" />
+            <wx:font wx:val="Calibri Light" />
+            <w:b />
+            <w:b-cs />
+            <w:sz w:val="32" />
+            <w:sz-cs w:val="32" />
+        </w:rPr>
+    </w:style>
+    <w:style w:type="paragraph" w:styleId="3">
+        <w:name w:val="heading 3" />
+        <wx:uiName wx:val="标题 3" />
+        <w:basedOn w:val="a" />
+        <w:next w:val="a" />
+        <w:link w:val="3Char" />
+        <w:rsid w:val="005700E5" />
+        <w:pPr>
+            <w:keepNext />
+            <w:keepLines />
+            <w:spacing w:before="260" w:after="260" w:line="416" w:line-rule="auto" />
+            <w:outlineLvl w:val="2" />
+        </w:pPr>
+        <w:rPr>
+            <wx:font wx:val="Calibri" />
+            <w:b />
+            <w:b-cs />
+            <w:sz w:val="32" />
+            <w:sz-cs w:val="32" />
+        </w:rPr>
+    </w:style>
+    <w:style w:type="paragraph" w:styleId="4">
+        <w:name w:val="heading 4" />
+        <wx:uiName wx:val="标题 4" />
+        <w:basedOn w:val="a" />
+        <w:next w:val="a" />
+        <w:link w:val="4Char" />
+        <w:rsid w:val="005700E5" />
+        <w:pPr>
+            <w:keepNext />
+            <w:keepLines />
+            <w:spacing w:before="280" w:after="290" w:line="376" w:line-rule="auto" />
+            <w:outlineLvl w:val="3" />
+        </w:pPr>
+        <w:rPr>
+            <w:rFonts w:ascii="Calibri Light" w:h-ansi="Calibri Light" />
+            <wx:font wx:val="Calibri Light" />
+            <w:b />
+            <w:b-cs />
+            <w:sz w:val="28" />
+            <w:sz-cs w:val="28" />
+        </w:rPr>
+    </w:style>
+    <w:style w:type="paragraph" w:styleId="5">
+        <w:name w:val="heading 5" />
+        <wx:uiName wx:val="标题 5" />
+        <w:basedOn w:val="a" />
+        <w:next w:val="a" />
+        <w:link w:val="5Char" />
+        <w:rsid w:val="005700E5" />
+        <w:pPr>
+            <w:keepNext />
+            <w:keepLines />
+            <w:spacing w:before="280" w:after="290" w:line="376" w:line-rule="auto" />
+            <w:outlineLvl w:val="4" />
+        </w:pPr>
+        <w:rPr>
+            <wx:font wx:val="Calibri" />
+            <w:b />
+            <w:b-cs />
+            <w:sz w:val="28" />
+            <w:sz-cs w:val="28" />
+        </w:rPr>
+    </w:style>
     <w:style w:type="character" w:default="on" w:styleId="a0">
         <w:name w:val="Default Paragraph Font" />
         <wx:uiName wx:val="默认段落字体" />
@@ -349,6 +464,68 @@
             </w:tblBorders>
         </w:tblPr>
     </w:style>
+    <w:style w:type="character" w:styleId="1Char">
+        <w:name w:val="标题 1 Char" />
+        <w:link w:val="1" />
+        <w:rsid w:val="005700E5" />
+        <w:rPr>
+            <w:b />
+            <w:b-cs />
+            <w:kern w:val="44" />
+            <w:sz w:val="44" />
+            <w:sz-cs w:val="44" />
+        </w:rPr>
+    </w:style>
+    <w:style w:type="character" w:styleId="2Char">
+        <w:name w:val="标题 2 Char" />
+        <w:link w:val="2" />
+        <w:rsid w:val="005700E5" />
+        <w:rPr>
+            <w:rFonts w:ascii="Calibri Light" w:fareast="宋体" w:h-ansi="Calibri Light" w:cs="Times New Roman" />
+            <w:b />
+            <w:b-cs />
+            <w:kern w:val="2" />
+            <w:sz w:val="32" />
+            <w:sz-cs w:val="32" />
+        </w:rPr>
+    </w:style>
+    <w:style w:type="character" w:styleId="3Char">
+        <w:name w:val="标题 3 Char" />
+        <w:link w:val="3" />
+        <w:rsid w:val="005700E5" />
+        <w:rPr>
+            <w:b />
+            <w:b-cs />
+            <w:kern w:val="2" />
+            <w:sz w:val="32" />
+            <w:sz-cs w:val="32" />
+        </w:rPr>
+    </w:style>
+    <w:style w:type="character" w:styleId="4Char">
+        <w:name w:val="标题 4 Char" />
+        <w:link w:val="4" />
+        <w:rsid w:val="005700E5" />
+        <w:rPr>
+            <w:rFonts w:ascii="Calibri Light" w:fareast="宋体" w:h-ansi="Calibri Light" w:cs="Times New Roman" />
+            <w:b />
+            <w:b-cs />
+            <w:kern w:val="2" />
+            <w:sz w:val="28" />
+            <w:sz-cs w:val="28" />
+        </w:rPr>
+    </w:style>
+    <w:style w:type="character" w:styleId="5Char">
+        <w:name w:val="标题 5 Char" />
+        <w:link w:val="5" />
+        <w:rsid w:val="005700E5" />
+        <w:rPr>
+            <w:b />
+            <w:b-cs />
+            <w:kern w:val="2" />
+            <w:sz w:val="28" />
+            <w:sz-cs w:val="28" />
+        </w:rPr>
+    </w:style>
 </w:styles>
 <w:shapeDefaults>
     <o:shapedefaults v:ext="edit" spidmax="2049" />
@@ -379,14 +556,14 @@
     </w:hdrShapeDefaults>
     <w:footnotePr>
         <w:footnote w:type="separator">
-            <w:p wsp:rsidR="006A3B3C" wsp:rsidRDefault="006A3B3C" wsp:rsidP="00035DEE">
+            <w:p wsp:rsidR="007D681A" wsp:rsidRDefault="007D681A" wsp:rsidP="00035DEE">
                 <w:r>
                     <w:separator />
                 </w:r>
             </w:p>
         </w:footnote>
         <w:footnote w:type="continuation-separator">
-            <w:p wsp:rsidR="006A3B3C" wsp:rsidRDefault="006A3B3C" wsp:rsidP="00035DEE">
+            <w:p wsp:rsidR="007D681A" wsp:rsidRDefault="007D681A" wsp:rsidP="00035DEE">
                 <w:r>
                     <w:continuationSeparator />
                 </w:r>
@@ -395,14 +572,14 @@
     </w:footnotePr>
     <w:endnotePr>
         <w:endnote w:type="separator">
-            <w:p wsp:rsidR="006A3B3C" wsp:rsidRDefault="006A3B3C" wsp:rsidP="00035DEE">
+            <w:p wsp:rsidR="007D681A" wsp:rsidRDefault="007D681A" wsp:rsidP="00035DEE">
                 <w:r>
                     <w:separator />
                 </w:r>
             </w:p>
         </w:endnote>
         <w:endnote w:type="continuation-separator">
-            <w:p wsp:rsidR="006A3B3C" wsp:rsidRDefault="006A3B3C" wsp:rsidP="00035DEE">
+            <w:p wsp:rsidR="007D681A" wsp:rsidRDefault="007D681A" wsp:rsidP="00035DEE">
                 <w:r>
                     <w:continuationSeparator />
                 </w:r>
@@ -426,15 +603,18 @@
     <wsp:rsids>
         <wsp:rsidRoot wsp:val="00370336" />
         <wsp:rsid wsp:val="00035DEE" />
+        <wsp:rsid wsp:val="00213ED5" />
         <wsp:rsid wsp:val="00370336" />
         <wsp:rsid wsp:val="003A3CAA" />
         <wsp:rsid wsp:val="0045455B" />
+        <wsp:rsid wsp:val="005700E5" />
         <wsp:rsid wsp:val="005C065F" />
         <wsp:rsid wsp:val="00606A10" />
         <wsp:rsid wsp:val="0066660D" />
         <wsp:rsid wsp:val="006925A9" />
         <wsp:rsid wsp:val="006A3B3C" />
         <wsp:rsid wsp:val="00796975" />
+        <wsp:rsid wsp:val="007D681A" />
         <wsp:rsid wsp:val="00821C19" />
         <wsp:rsid wsp:val="00827FCE" />
         <wsp:rsid wsp:val="0084667C" />
@@ -446,504 +626,421 @@
 </w:docPr>
 <w:body>
     <wx:sect>
-        <w:p wsp:rsidR="00827FCE" wsp:rsidRDefault="00035DEE">
-            <w:r>
-                <w:rPr>
-                    <wx:font wx:val="宋体" />
-                </w:rPr>
-                <w:t>生产服务</w:t>
-            </w:r>
-        </w:p>
-        <w:p wsp:rsidR="00035DEE" wsp:rsidRDefault="00035DEE">
-            <w:r>
-                <w:rPr>
-                    <w:rFonts w:hint="fareast" />
-                </w:rPr>
-                <w:t></w:t>
-            </w:r>
-            <w:r>
-                <w:t>${projectName}</w:t>
-            </w:r>
-            <w:r>
-                <w:rPr>
-                    <w:rFonts w:hint="fareast" />
-                </w:rPr>
-                <w:t></w:t>
-            </w:r>
-        </w:p>
-        <w:p wsp:rsidR="00035DEE" wsp:rsidRDefault="00035DEE">
-            <w:r>
-                <w:rPr>
-                    <w:rFonts w:hint="fareast" />
-                    <wx:font wx:val="宋体" />
-                </w:rPr>
-                <w:t>接口</w:t>
-            </w:r>
-        </w:p>
-        <w:p wsp:rsidR="00035DEE" wsp:rsidRDefault="00035DEE">
-            <w:r>
-                <w:rPr>
-                    <w:rFonts w:hint="fareast" />
-                </w:rPr>
-                <w:t></w:t>
-            </w:r>
-            <w:r>
-                <w:t>${serviceName}</w:t>
-            </w:r>
-            <w:r>
-                <w:rPr>
-                    <w:rFonts w:hint="fareast" />
-                </w:rPr>
-                <w:t></w:t>
-            </w:r>
-        </w:p>
-        <w:p wsp:rsidR="00035DEE" wsp:rsidRDefault="00035DEE">
-            <w:r>
-                <w:rPr>
-                    <wx:font wx:val="宋体" />
-                </w:rPr>
-                <w:t>实现</w:t>
-            </w:r>
-        </w:p>
-        <w:p wsp:rsidR="00035DEE" wsp:rsidRDefault="00035DEE">
-            <w:r>
-                <w:rPr>
-                    <w:rFonts w:hint="fareast" />
-                </w:rPr>
-                <w:t></w:t>
-            </w:r>
-            <w:r>
-                <w:t>${serviceImplName}</w:t>
-            </w:r>
-            <w:r>
-                <w:rPr>
-                    <w:rFonts w:hint="fareast" />
-                </w:rPr>
-                <w:t></w:t>
-            </w:r>
-        </w:p>
-        <w:p wsp:rsidR="00035DEE" wsp:rsidRDefault="00035DEE">
-            <w:r>
-                <w:rPr>
-                    <w:rFonts w:hint="fareast" />
-                    <wx:font wx:val="宋体" />
-                </w:rPr>
-                <w:t>方法</w:t>
-            </w:r>
-        </w:p>
-		<#list methodList as method>
-        <w:p wsp:rsidR="00035DEE" wsp:rsidRDefault="00035DEE">
-            <w:r>
-                <w:rPr>
-                    <w:rFonts w:hint="fareast" />
-                </w:rPr>
-                <w:t></w:t>
-            </w:r>
-            <w:r>
-                <w:t>${method.name}</w:t>
-            </w:r>
-            <w:r>
-                <w:rPr>
-                    <w:rFonts w:hint="fareast" />
-                </w:rPr>
-                <w:t></w:t>
-            </w:r>
-        </w:p>
-        <w:p wsp:rsidR="00035DEE" wsp:rsidRDefault="00035DEE">
-            <w:r>
-                <w:rPr>
-                    <w:rFonts w:hint="fareast" />
-                    <wx:font wx:val="宋体" />
-                </w:rPr>
-                <w:t>签名</w:t>
-            </w:r>
-        </w:p>
-        <w:p wsp:rsidR="00035DEE" wsp:rsidRDefault="00035DEE">
-            <w:r>
-                <w:rPr>
-                    <w:rFonts w:hint="fareast" />
-                </w:rPr>
-                <w:t></w:t>
-            </w:r>
-            <w:r>
-                <w:t>${method.nameAndParams}</w:t>
-            </w:r>
-            <w:r>
-                <w:rPr>
-                    <w:rFonts w:hint="fareast" />
-                </w:rPr>
-                <w:t></w:t>
-            </w:r>
-        </w:p>
-        <w:p wsp:rsidR="00035DEE" wsp:rsidRDefault="00035DEE">
-            <w:r>
-                <w:rPr>
-                    <wx:font wx:val="宋体" />
-                </w:rPr>
-                <w:t>请求对象</w:t>
-            </w:r>
-        </w:p>
-        <w:p wsp:rsidR="00035DEE" wsp:rsidRDefault="00035DEE">
-            <w:r>
-                <w:rPr>
-                    <w:rFonts w:hint="fareast" />
-                </w:rPr>
-                <w:t></w:t>
-            </w:r>
-            <w:r>
-                <w:t>${method.req}</w:t>
-            </w:r>
-            <w:r>
-                <w:rPr>
-                    <w:rFonts w:hint="fareast" />
-                </w:rPr>
-                <w:t></w:t>
-            </w:r>
-        </w:p>
-        <w:p wsp:rsidR="0045455B" wsp:rsidRDefault="0045455B">
-            <w:r>
-                <w:rPr>
-                    <w:rFonts w:hint="fareast" />
-                    <wx:font wx:val="宋体" />
-                </w:rPr>
-                <w:t>请求对象参数</w:t>
-            </w:r>
-        </w:p>
-        <w:tbl>
-            <w:tblPr>
-                <w:tblW w:w="0" w:type="auto" />
-                <w:tblBorders>
-                    <w:top w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
-                    <w:left w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
-                    <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
-                    <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
-                    <w:insideH w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
-                    <w:insideV w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
-                </w:tblBorders>
-                <w:tblLook w:val="04A0" />
-            </w:tblPr>
-            <w:tblGrid>
-                <w:gridCol w:w="2130" />
-                <w:gridCol w:w="2130" />
-                <w:gridCol w:w="2131" />
-                <w:gridCol w:w="2131" />
-            </w:tblGrid>
-            <w:tr wsp:rsidR="0084667C" wsp:rsidTr="0084667C">
-                <w:tc>
-                    <w:tcPr>
-                        <w:tcW w:w="2130" w:type="dxa" />
-                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-                    </w:tcPr>
-                    <w:p wsp:rsidR="003A3CAA" wsp:rsidRDefault="003A3CAA">
+        <wx:sub-section>
+            <w:p wsp:rsidR="00827FCE" wsp:rsidRDefault="00035DEE" wsp:rsidP="005700E5">
+                <w:pPr>
+                    <w:pStyle w:val="1" />
+                </w:pPr>
+                <w:r>
+                    <w:rPr>
+                        <wx:font wx:val="宋体" />
+                    </w:rPr>
+                    <w:t>生产服务</w:t>
+                </w:r>
+            </w:p>
+            <wx:sub-section>
+                <w:p wsp:rsidR="00035DEE" wsp:rsidRDefault="00035DEE" wsp:rsidP="005700E5">
+                    <w:pPr>
+                        <w:pStyle w:val="2" />
+                    </w:pPr>
+                    <w:r>
+                        <w:t>${projectName}</w:t>
+                    </w:r>
+                </w:p>
+                <wx:sub-section>
+                    <w:p wsp:rsidR="00035DEE" wsp:rsidRDefault="00035DEE" wsp:rsidP="005700E5">
+                        <w:pPr>
+                            <w:pStyle w:val="3" />
+                        </w:pPr>
                         <w:r>
                             <w:rPr>
                                 <w:rFonts w:hint="fareast" />
                                 <wx:font wx:val="宋体" />
                             </w:rPr>
-                            <w:t>参数名</w:t>
+                            <w:t>接口</w:t>
                         </w:r>
                     </w:p>
-                </w:tc>
-                <w:tc>
-                    <w:tcPr>
-                        <w:tcW w:w="2130" w:type="dxa" />
-                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-                    </w:tcPr>
-                    <w:p wsp:rsidR="003A3CAA" wsp:rsidRDefault="003A3CAA">
+                    <w:p wsp:rsidR="00035DEE" wsp:rsidRDefault="00035DEE">
+                        <w:r>
+                            <w:t>${serviceName}</w:t>
+                        </w:r>
+                    </w:p>
+                </wx:sub-section>
+                <wx:sub-section>
+                    <w:p wsp:rsidR="00035DEE" wsp:rsidRDefault="00035DEE" wsp:rsidP="005700E5">
+                        <w:pPr>
+                            <w:pStyle w:val="3" />
+                        </w:pPr>
                         <w:r>
                             <w:rPr>
                                 <wx:font wx:val="宋体" />
                             </w:rPr>
-                            <w:t>类型</w:t>
+                            <w:t>实现</w:t>
                         </w:r>
                     </w:p>
-                </w:tc>
-                <w:tc>
-                    <w:tcPr>
-                        <w:tcW w:w="2131" w:type="dxa" />
-                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-                    </w:tcPr>
-                    <w:p wsp:rsidR="003A3CAA" wsp:rsidRDefault="003A3CAA">
+                    <w:p wsp:rsidR="00035DEE" wsp:rsidRDefault="00035DEE">
                         <w:r>
-                            <w:rPr>
-                                <wx:font wx:val="宋体" />
-                            </w:rPr>
-                            <w:t>必输</w:t>
+                            <w:t>${serviceImplName}</w:t>
                         </w:r>
                     </w:p>
-                </w:tc>
-                <w:tc>
-                    <w:tcPr>
-                        <w:tcW w:w="2131" w:type="dxa" />
-                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-                    </w:tcPr>
-                    <w:p wsp:rsidR="003A3CAA" wsp:rsidRDefault="003A3CAA">
-                        <w:r>
-                            <w:rPr>
-                                <wx:font wx:val="宋体" />
-                            </w:rPr>
-                            <w:t>描述</w:t>
-                        </w:r>
-                    </w:p>
-                </w:tc>
-            </w:tr>
-			<#list method.reqFieldList as field>
-            <w:tr wsp:rsidR="0084667C" wsp:rsidTr="0084667C">
-                <w:tc>
-                    <w:tcPr>
-                        <w:tcW w:w="2130" w:type="dxa" />
-                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-                    </w:tcPr>
-                    <w:p wsp:rsidR="003A3CAA" wsp:rsidRDefault="003A3CAA">
-                        <w:r>
-                            <w:rPr>
-                                <w:rFonts w:hint="fareast" />
-                            </w:rPr>
-                            <w:t></w:t>
-                        </w:r>
-                        <w:r>
-                            <w:t>${field.name}</w:t>
-                        </w:r>
-                        <w:r>
-                            <w:rPr>
-                                <w:rFonts w:hint="fareast" />
-                            </w:rPr>
-                            <w:t></w:t>
-                        </w:r>
-                    </w:p>
-                </w:tc>
-                <w:tc>
-                    <w:tcPr>
-                        <w:tcW w:w="2130" w:type="dxa" />
-                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-                    </w:tcPr>
-                    <w:p wsp:rsidR="003A3CAA" wsp:rsidRDefault="003A3CAA">
-                        <w:r>
-                            <w:rPr>
-                                <w:rFonts w:hint="fareast" />
-                            </w:rPr>
-                            <w:t></w:t>
-                        </w:r>
-                        <w:r>
-                            <w:t>${field.type}</w:t>
-                        </w:r>
-                        <w:r>
-                            <w:rPr>
-                                <w:rFonts w:hint="fareast" />
-                            </w:rPr>
-                            <w:t></w:t>
-                        </w:r>
-                    </w:p>
-                </w:tc>
-                <w:tc>
-                    <w:tcPr>
-                        <w:tcW w:w="2131" w:type="dxa" />
-                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-                    </w:tcPr>
-                    <w:p wsp:rsidR="003A3CAA" wsp:rsidRDefault="003A3CAA" />
-                </w:tc>
-                <w:tc>
-                    <w:tcPr>
-                        <w:tcW w:w="2131" w:type="dxa" />
-                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-                    </w:tcPr>
-                    <w:p wsp:rsidR="003A3CAA" wsp:rsidRDefault="003A3CAA" />
-                </w:tc>
-            </w:tr>
-			</#list>
-        </w:tbl>
-        <w:p wsp:rsidR="00035DEE" wsp:rsidRDefault="0066660D">
-            <w:r>
-                <w:rPr>
-                    <w:rFonts w:hint="fareast" />
-                    <wx:font wx:val="宋体" />
-                </w:rPr>
-                <w:t>返回对象</w:t>
-            </w:r>
-        </w:p>
-        <w:p wsp:rsidR="0066660D" wsp:rsidRDefault="0066660D">
-            <w:r>
-                <w:rPr>
-                    <w:rFonts w:hint="fareast" />
-                </w:rPr>
-                <w:t></w:t>
-            </w:r>
-            <w:r>
-                <w:t>${method.resp}</w:t>
-            </w:r>
-            <w:r>
-                <w:rPr>
-                    <w:rFonts w:hint="fareast" />
-                </w:rPr>
-                <w:t></w:t>
-            </w:r>
-        </w:p>
-        <w:p wsp:rsidR="00E66CF7" wsp:rsidRDefault="00E66CF7">
-            <w:r>
-                <w:rPr>
-                    <w:rFonts w:hint="fareast" />
-                    <wx:font wx:val="宋体" />
-                </w:rPr>
-                <w:t>返回对象参数</w:t>
-            </w:r>
-        </w:p>
-        <w:tbl>
-            <w:tblPr>
-                <w:tblW w:w="0" w:type="auto" />
-                <w:tblBorders>
-                    <w:top w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
-                    <w:left w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
-                    <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
-                    <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
-                    <w:insideH w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
-                    <w:insideV w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
-                </w:tblBorders>
-                <w:tblLook w:val="04A0" />
-            </w:tblPr>
-            <w:tblGrid>
-                <w:gridCol w:w="2130" />
-                <w:gridCol w:w="2130" />
-                <w:gridCol w:w="2131" />
-                <w:gridCol w:w="2131" />
-            </w:tblGrid>
-            <w:tr wsp:rsidR="00821C19" wsp:rsidTr="008352B2">
-                <w:tc>
-                    <w:tcPr>
-                        <w:tcW w:w="2130" w:type="dxa" />
-                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-                    </w:tcPr>
-                    <w:p wsp:rsidR="00821C19" wsp:rsidRDefault="00821C19" wsp:rsidP="008352B2">
+                </wx:sub-section>
+                <wx:sub-section>
+                    <w:p wsp:rsidR="00035DEE" wsp:rsidRDefault="00035DEE" wsp:rsidP="005700E5">
+                        <w:pPr>
+                            <w:pStyle w:val="3" />
+                        </w:pPr>
                         <w:r>
                             <w:rPr>
                                 <w:rFonts w:hint="fareast" />
                                 <wx:font wx:val="宋体" />
                             </w:rPr>
-                            <w:t>参数名</w:t>
+                            <w:t>方法</w:t>
                         </w:r>
                     </w:p>
-                </w:tc>
-                <w:tc>
-                    <w:tcPr>
-                        <w:tcW w:w="2130" w:type="dxa" />
-                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-                    </w:tcPr>
-                    <w:p wsp:rsidR="00821C19" wsp:rsidRDefault="00821C19" wsp:rsidP="008352B2">
-                        <w:r>
-                            <w:rPr>
-                                <wx:font wx:val="宋体" />
-                            </w:rPr>
-                            <w:t>类型</w:t>
-                        </w:r>
-                    </w:p>
-                </w:tc>
-                <w:tc>
-                    <w:tcPr>
-                        <w:tcW w:w="2131" w:type="dxa" />
-                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-                    </w:tcPr>
-                    <w:p wsp:rsidR="00821C19" wsp:rsidRDefault="00821C19" wsp:rsidP="008352B2">
-                        <w:r>
-                            <w:rPr>
-                                <wx:font wx:val="宋体" />
-                            </w:rPr>
-                            <w:t>必输</w:t>
-                        </w:r>
-                    </w:p>
-                </w:tc>
-                <w:tc>
-                    <w:tcPr>
-                        <w:tcW w:w="2131" w:type="dxa" />
-                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-                    </w:tcPr>
-                    <w:p wsp:rsidR="00821C19" wsp:rsidRDefault="00821C19" wsp:rsidP="008352B2">
-                        <w:r>
-                            <w:rPr>
-                                <wx:font wx:val="宋体" />
-                            </w:rPr>
-                            <w:t>描述</w:t>
-                        </w:r>
-                    </w:p>
-                </w:tc>
-            </w:tr>
-			<#list method.respFieldList as field>
-            <w:tr wsp:rsidR="00821C19" wsp:rsidTr="008352B2">
-                <w:tc>
-                    <w:tcPr>
-                        <w:tcW w:w="2130" w:type="dxa" />
-                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-                    </w:tcPr>
-                    <w:p wsp:rsidR="00821C19" wsp:rsidRDefault="00821C19" wsp:rsidP="008352B2">
-                        <w:r>
-                            <w:rPr>
-                                <w:rFonts w:hint="fareast" />
-                            </w:rPr>
-                            <w:t></w:t>
-                        </w:r>
-                        <w:r>
-                            <w:t>${field.name}</w:t>
-                        </w:r>
-                        <w:r>
-                            <w:rPr>
-                                <w:rFonts w:hint="fareast" />
-                            </w:rPr>
-                            <w:t></w:t>
-                        </w:r>
-                    </w:p>
-                </w:tc>
-                <w:tc>
-                    <w:tcPr>
-                        <w:tcW w:w="2130" w:type="dxa" />
-                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-                    </w:tcPr>
-                    <w:p wsp:rsidR="00821C19" wsp:rsidRDefault="00821C19" wsp:rsidP="008352B2">
-                        <w:r>
-                            <w:rPr>
-                                <w:rFonts w:hint="fareast" />
-                            </w:rPr>
-                            <w:t></w:t>
-                        </w:r>
-                        <w:r>
-                            <w:t>${field.type}</w:t>
-                        </w:r>
-                        <w:r>
-                            <w:rPr>
-                                <w:rFonts w:hint="fareast" />
-                            </w:rPr>
-                            <w:t></w:t>
-                        </w:r>
-                    </w:p>
-                </w:tc>
-                <w:tc>
-                    <w:tcPr>
-                        <w:tcW w:w="2131" w:type="dxa" />
-                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-                    </w:tcPr>
-                    <w:p wsp:rsidR="00821C19" wsp:rsidRDefault="00821C19" wsp:rsidP="008352B2" />
-                </w:tc>
-                <w:tc>
-                    <w:tcPr>
-                        <w:tcW w:w="2131" w:type="dxa" />
-                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
-                    </w:tcPr>
-                    <w:p wsp:rsidR="00821C19" wsp:rsidRDefault="00821C19" wsp:rsidP="008352B2" />
-                </w:tc>
-            </w:tr>
-			</#list>
-        </w:tbl>
-        <w:p wsp:rsidR="00821C19" wsp:rsidRDefault="00821C19">
-            <w:pPr>
-                <w:rPr>
-                    <w:rFonts w:hint="fareast" />
-                </w:rPr>
-            </w:pPr>
-        </w:p>
+					<#list methodList as method>
+                    <wx:sub-section>
+                        <w:p wsp:rsidR="00035DEE" wsp:rsidRDefault="00035DEE" wsp:rsidP="005700E5">
+                            <w:pPr>
+                                <w:pStyle w:val="4" />
+                            </w:pPr>
+                            <w:r>
+                                <w:t>${method.name}</w:t>
+                            </w:r>
+                        </w:p>
+                        <wx:sub-section>
+                            <w:p wsp:rsidR="00035DEE" wsp:rsidRDefault="00035DEE" wsp:rsidP="005700E5">
+                                <w:pPr>
+                                    <w:pStyle w:val="5" />
+                                </w:pPr>
+                                <w:r>
+                                    <w:rPr>
+                                        <w:rFonts w:hint="fareast" />
+                                        <wx:font wx:val="宋体" />
+                                    </w:rPr>
+                                    <w:t>签名</w:t>
+                                </w:r>
+                            </w:p>
+                            <w:p wsp:rsidR="00035DEE" wsp:rsidRDefault="00035DEE">
+                                <w:r>
+                                    <w:t>${method.nameAndParams}</w:t>
+                                </w:r>
+                            </w:p>
+                        </wx:sub-section>
+                        <wx:sub-section>
+                            <w:p wsp:rsidR="00035DEE" wsp:rsidRDefault="00035DEE" wsp:rsidP="005700E5">
+                                <w:pPr>
+                                    <w:pStyle w:val="5" />
+                                </w:pPr>
+                                <w:r>
+                                    <w:rPr>
+                                        <wx:font wx:val="宋体" />
+                                    </w:rPr>
+                                    <w:t>请求对象</w:t>
+                                </w:r>
+                            </w:p>
+                            <w:p wsp:rsidR="00035DEE" wsp:rsidRDefault="00035DEE">
+                                <w:r>
+                                    <w:t>${method.req}</w:t>
+                                </w:r>
+                            </w:p>
+                        </wx:sub-section>
+                        <wx:sub-section>
+                            <w:p wsp:rsidR="0045455B" wsp:rsidRDefault="0045455B" wsp:rsidP="005700E5">
+                                <w:pPr>
+                                    <w:pStyle w:val="5" />
+                                </w:pPr>
+                                <w:r>
+                                    <w:rPr>
+                                        <w:rFonts w:hint="fareast" />
+                                        <wx:font wx:val="宋体" />
+                                    </w:rPr>
+                                    <w:t>请求对象参数</w:t>
+                                </w:r>
+                            </w:p>
+                            <w:tbl>
+                                <w:tblPr>
+                                    <w:tblW w:w="0" w:type="auto" />
+                                    <w:tblBorders>
+                                        <w:top w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                                        <w:left w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                                        <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                                        <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                                        <w:insideH w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                                        <w:insideV w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                                    </w:tblBorders>
+                                    <w:tblLook w:val="04A0" />
+                                </w:tblPr>
+                                <w:tblGrid>
+                                    <w:gridCol w:w="2130" />
+                                    <w:gridCol w:w="2130" />
+                                    <w:gridCol w:w="2131" />
+                                    <w:gridCol w:w="2131" />
+                                </w:tblGrid>
+                                <w:tr wsp:rsidR="0084667C" wsp:rsidTr="0084667C">
+                                    <w:tc>
+                                        <w:tcPr>
+                                            <w:tcW w:w="2130" w:type="dxa" />
+                                            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                                        </w:tcPr>
+                                        <w:p wsp:rsidR="003A3CAA" wsp:rsidRDefault="003A3CAA">
+                                            <w:r>
+                                                <w:rPr>
+                                                    <w:rFonts w:hint="fareast" />
+                                                    <wx:font wx:val="宋体" />
+                                                </w:rPr>
+                                                <w:t>参数名</w:t>
+                                            </w:r>
+                                        </w:p>
+                                    </w:tc>
+                                    <w:tc>
+                                        <w:tcPr>
+                                            <w:tcW w:w="2130" w:type="dxa" />
+                                            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                                        </w:tcPr>
+                                        <w:p wsp:rsidR="003A3CAA" wsp:rsidRDefault="003A3CAA">
+                                            <w:r>
+                                                <w:rPr>
+                                                    <wx:font wx:val="宋体" />
+                                                </w:rPr>
+                                                <w:t>类型</w:t>
+                                            </w:r>
+                                        </w:p>
+                                    </w:tc>
+                                    <w:tc>
+                                        <w:tcPr>
+                                            <w:tcW w:w="2131" w:type="dxa" />
+                                            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                                        </w:tcPr>
+                                        <w:p wsp:rsidR="003A3CAA" wsp:rsidRDefault="003A3CAA">
+                                            <w:r>
+                                                <w:rPr>
+                                                    <wx:font wx:val="宋体" />
+                                                </w:rPr>
+                                                <w:t>必输</w:t>
+                                            </w:r>
+                                        </w:p>
+                                    </w:tc>
+                                    <w:tc>
+                                        <w:tcPr>
+                                            <w:tcW w:w="2131" w:type="dxa" />
+                                            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                                        </w:tcPr>
+                                        <w:p wsp:rsidR="003A3CAA" wsp:rsidRDefault="003A3CAA">
+                                            <w:r>
+                                                <w:rPr>
+                                                    <wx:font wx:val="宋体" />
+                                                </w:rPr>
+                                                <w:t>描述</w:t>
+                                            </w:r>
+                                        </w:p>
+                                    </w:tc>
+                                </w:tr>
+								<#list method.reqFieldList as field>
+                                <w:tr wsp:rsidR="0084667C" wsp:rsidTr="0084667C">
+                                    <w:tc>
+                                        <w:tcPr>
+                                            <w:tcW w:w="2130" w:type="dxa" />
+                                            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                                        </w:tcPr>
+                                        <w:p wsp:rsidR="003A3CAA" wsp:rsidRDefault="003A3CAA">
+                                            <w:r>
+                                                <w:t>${field.name}</w:t>
+                                            </w:r>
+                                        </w:p>
+                                    </w:tc>
+                                    <w:tc>
+                                        <w:tcPr>
+                                            <w:tcW w:w="2130" w:type="dxa" />
+                                            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                                        </w:tcPr>
+                                        <w:p wsp:rsidR="003A3CAA" wsp:rsidRDefault="003A3CAA">
+                                            <w:r>
+                                                <w:t>${field.type}</w:t>
+                                            </w:r>
+                                        </w:p>
+                                    </w:tc>
+                                    <w:tc>
+                                        <w:tcPr>
+                                            <w:tcW w:w="2131" w:type="dxa" />
+                                            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                                        </w:tcPr>
+                                        <w:p wsp:rsidR="003A3CAA" wsp:rsidRDefault="003A3CAA" />
+                                    </w:tc>
+                                    <w:tc>
+                                        <w:tcPr>
+                                            <w:tcW w:w="2131" w:type="dxa" />
+                                            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                                        </w:tcPr>
+                                        <w:p wsp:rsidR="003A3CAA" wsp:rsidRDefault="003A3CAA" />
+                                    </w:tc>
+                                </w:tr>
+                                </#list>
+                            </w:tbl>
+                        </wx:sub-section>
+                        <wx:sub-section>
+                            <w:p wsp:rsidR="00035DEE" wsp:rsidRDefault="0066660D" wsp:rsidP="005700E5">
+                                <w:pPr>
+                                    <w:pStyle w:val="5" />
+                                </w:pPr>
+                                <w:r>
+                                    <w:rPr>
+                                        <w:rFonts w:hint="fareast" />
+                                        <wx:font wx:val="宋体" />
+                                    </w:rPr>
+                                    <w:t>返回对象</w:t>
+                                </w:r>
+                            </w:p>
+                            <w:p wsp:rsidR="0066660D" wsp:rsidRDefault="0066660D">
+                                <w:r>
+                                    <w:t>${method.resp}</w:t>
+                                </w:r>
+                            </w:p>
+                        </wx:sub-section>
+                        <wx:sub-section>
+                            <w:p wsp:rsidR="00E66CF7" wsp:rsidRDefault="00E66CF7" wsp:rsidP="005700E5">
+                                <w:pPr>
+                                    <w:pStyle w:val="5" />
+                                </w:pPr>
+                                <w:r>
+                                    <w:rPr>
+                                        <w:rFonts w:hint="fareast" />
+                                        <wx:font wx:val="宋体" />
+                                    </w:rPr>
+                                    <w:t>返回对象参数</w:t>
+                                </w:r>
+                            </w:p>
+                            <w:tbl>
+                                <w:tblPr>
+                                    <w:tblW w:w="0" w:type="auto" />
+                                    <w:tblBorders>
+                                        <w:top w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                                        <w:left w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                                        <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                                        <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                                        <w:insideH w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                                        <w:insideV w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                                    </w:tblBorders>
+                                    <w:tblLook w:val="04A0" />
+                                </w:tblPr>
+                                <w:tblGrid>
+                                    <w:gridCol w:w="2130" />
+                                    <w:gridCol w:w="2130" />
+                                    <w:gridCol w:w="2131" />
+                                    <w:gridCol w:w="2131" />
+                                </w:tblGrid>
+                                <w:tr wsp:rsidR="00821C19" wsp:rsidTr="008352B2">
+                                    <w:tc>
+                                        <w:tcPr>
+                                            <w:tcW w:w="2130" w:type="dxa" />
+                                            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                                        </w:tcPr>
+                                        <w:p wsp:rsidR="00821C19" wsp:rsidRDefault="00821C19" wsp:rsidP="008352B2">
+                                            <w:r>
+                                                <w:rPr>
+                                                    <w:rFonts w:hint="fareast" />
+                                                    <wx:font wx:val="宋体" />
+                                                </w:rPr>
+                                                <w:t>参数名</w:t>
+                                            </w:r>
+                                        </w:p>
+                                    </w:tc>
+                                    <w:tc>
+                                        <w:tcPr>
+                                            <w:tcW w:w="2130" w:type="dxa" />
+                                            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                                        </w:tcPr>
+                                        <w:p wsp:rsidR="00821C19" wsp:rsidRDefault="00821C19" wsp:rsidP="008352B2">
+                                            <w:r>
+                                                <w:rPr>
+                                                    <wx:font wx:val="宋体" />
+                                                </w:rPr>
+                                                <w:t>类型</w:t>
+                                            </w:r>
+                                        </w:p>
+                                    </w:tc>
+                                    <w:tc>
+                                        <w:tcPr>
+                                            <w:tcW w:w="2131" w:type="dxa" />
+                                            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                                        </w:tcPr>
+                                        <w:p wsp:rsidR="00821C19" wsp:rsidRDefault="00821C19" wsp:rsidP="008352B2">
+                                            <w:r>
+                                                <w:rPr>
+                                                    <wx:font wx:val="宋体" />
+                                                </w:rPr>
+                                                <w:t>必输</w:t>
+                                            </w:r>
+                                        </w:p>
+                                    </w:tc>
+                                    <w:tc>
+                                        <w:tcPr>
+                                            <w:tcW w:w="2131" w:type="dxa" />
+                                            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                                        </w:tcPr>
+                                        <w:p wsp:rsidR="00821C19" wsp:rsidRDefault="00821C19" wsp:rsidP="008352B2">
+                                            <w:r>
+                                                <w:rPr>
+                                                    <wx:font wx:val="宋体" />
+                                                </w:rPr>
+                                                <w:t>描述</w:t>
+                                            </w:r>
+                                        </w:p>
+                                    </w:tc>
+                                </w:tr>
+								<#list method.respFieldList as field>
+                                <w:tr wsp:rsidR="00821C19" wsp:rsidTr="008352B2">
+                                    <w:tc>
+                                        <w:tcPr>
+                                            <w:tcW w:w="2130" w:type="dxa" />
+                                            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                                        </w:tcPr>
+                                        <w:p wsp:rsidR="00821C19" wsp:rsidRDefault="00821C19" wsp:rsidP="008352B2">
+                                            <w:r>
+                                                <w:t>${field.name}</w:t>
+                                            </w:r>
+                                        </w:p>
+                                    </w:tc>
+                                    <w:tc>
+                                        <w:tcPr>
+                                            <w:tcW w:w="2130" w:type="dxa" />
+                                            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                                        </w:tcPr>
+                                        <w:p wsp:rsidR="00821C19" wsp:rsidRDefault="00821C19" wsp:rsidP="008352B2">
+                                            <w:r>
+                                                <w:t>${field.type}</w:t>
+                                            </w:r>
+                                        </w:p>
+                                    </w:tc>
+                                    <w:tc>
+                                        <w:tcPr>
+                                            <w:tcW w:w="2131" w:type="dxa" />
+                                            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                                        </w:tcPr>
+                                        <w:p wsp:rsidR="00821C19" wsp:rsidRDefault="00821C19" wsp:rsidP="008352B2" />
+                                    </w:tc>
+                                    <w:tc>
+                                        <w:tcPr>
+                                            <w:tcW w:w="2131" w:type="dxa" />
+                                            <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                                        </w:tcPr>
+                                        <w:p wsp:rsidR="00821C19" wsp:rsidRDefault="00821C19" wsp:rsidP="008352B2" />
+                                    </w:tc>
+                                </w:tr>
+                                </#list>
+                            </w:tbl>
+                            <w:p wsp:rsidR="00821C19" wsp:rsidRDefault="00821C19" />
+                        </wx:sub-section>
+                    </wx:sub-section>
+                    </#list>
+                </wx:sub-section>
+            </wx:sub-section>
+        </wx:sub-section>
         <w:sectPr wsp:rsidR="00821C19" wsp:rsidSect="006925A9">
             <w:pgSz w:w="11906" w:h="16838" />
             <w:pgMar w:top="1440" w:right="1800" w:bottom="1440" w:left="1800" w:header="851" w:footer="992" w:gutter="0" />
             <w:cols w:space="425" />
             <w:docGrid w:type="lines" w:line-pitch="312" />
         </w:sectPr>
-		</#list>
     </wx:sect>
 </w:body>
 </w:wordDocument>

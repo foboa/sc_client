@@ -1,6 +1,8 @@
 package test.java.test.gendocument;
 
+import com.eip.service.biz.socialsecurity.inf.SocialSecurityService;
 import com.eip.service.biz.xiehui.inf.XiehuiApiService;
+import com.eip.service.biz.xinyancredit.inf.XyCreditService;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
@@ -32,7 +34,7 @@ public class GenDocument {
 
     public void genDoc() throws Exception {
         Map<String,Object> dataMap=new HashMap<String,Object>();
-        getData(dataMap,XiehuiApiService.class,"互金协会");
+        getData(dataMap,SocialSecurityService.class,"社保");
         configuration.setDirectoryForTemplateLoading(new File("C:\\Users\\Administrator\\Desktop\\freemark"));  //FTL文件所存在的位置
         Template t=null;
         try {
@@ -86,18 +88,23 @@ public class GenDocument {
             methodDto.setName(method.getName());
             methodDto.setNameAndParams("<![CDATA["+method.toGenericString()+"]]>");
             Class<?>[] reqParams = method.getParameterTypes();
-            methodDto.setReq(reqParams[0].toString());
-            methodDto.setResp("<![CDATA["+method.getGenericReturnType().toString()+"]]>");
-            Class reqClass = reqParams[0];
-            Field[] reqFields = reqClass.getDeclaredFields();
-            List<FieldDto> reqFieldsList = new ArrayList<>();
-            for(Field field : reqFields){
-                FieldDto fieldDto = new FieldDto();
-                fieldDto.setName(field.getName());
-                fieldDto.setType(field.getType().getTypeName());
-                reqFieldsList.add(fieldDto);
+            if(reqParams.length>0) {
+                methodDto.setReq(reqParams[0].toString());
+                Class reqClass = reqParams[0];
+                Field[] reqFields = reqClass.getDeclaredFields();
+                List<FieldDto> reqFieldsList = new ArrayList<>();
+                for(Field field : reqFields){
+                    FieldDto fieldDto = new FieldDto();
+                    fieldDto.setName(field.getName());
+                    fieldDto.setType(field.getType().getTypeName());
+                    reqFieldsList.add(fieldDto);
+                }
+                methodDto.setReqFieldList(reqFieldsList);
+            }else{
+                methodDto.setReq("无");
+                methodDto.setReqFieldList(new ArrayList<FieldDto>());
             }
-            methodDto.setReqFieldList(reqFieldsList);
+            methodDto.setResp("<![CDATA["+method.getGenericReturnType().toString()+"]]>");
             Type genericReturnType = method.getGenericReturnType();
             Type[] actualTypeArguments = ((ParameterizedType)genericReturnType).getActualTypeArguments();
             Class respClass = Class.forName(actualTypeArguments[0].getTypeName());

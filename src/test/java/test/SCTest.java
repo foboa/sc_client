@@ -27,7 +27,7 @@ public class SCTest {
 	}
 	/*@Test
 	public  void updateStatusTest() {
-		
+
 		Long appId = 35436824l;
 		String statusNo = "A12";
 		String oldStatus = "01";
@@ -37,8 +37,8 @@ public class SCTest {
 		request.getBody().put("statusNo", statusNo);
 		request.getBody().put("oldStatus",oldStatus);
 		request.getBody().put("oldStatus",oldStatus);
-		
-		
+
+
 		try {
 			SCResult updateApp = service.updateApp(request);
 			System.out.println(updateApp);
@@ -51,7 +51,7 @@ public class SCTest {
 	public void queryApp(){
 		try {
 			SCRequest request = new SCRequest();
-			
+
 			SCResult updateApp = service.queryLnApp(request);
 			System.out.println(updateApp);
 		} catch (Exception e) {
@@ -68,9 +68,9 @@ public class SCTest {
 			body.setAppId(appId);
 			Integer subType = LnAppSubsidiary.ASSIST_CHECK_INFO|LnAppSubsidiary.GOODS_INFO|LnAppSubsidiary.CONTACTS_INFO;
 			body.put("subType", subType);
-			
+
 			request.setBody(body);
-			
+
 			try {
 				SCResult updateApp = service.queryLnAppSubsidiaryInfo(request);
 				System.out.println(updateApp);
@@ -78,13 +78,13 @@ public class SCTest {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			
+
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
-	
+
 	@Test
 	public  void updateStatusQZTest() {
 		SCRequest request = new SCRequest();
@@ -102,7 +102,7 @@ public class SCTest {
 	@Test
 	public  void testJson() throws ParseException {
 		String json = "{\"className\":[\"appId\",\"auditTypeCode\",\"auditResCode\"],\"className1\":[\"appId\",\"auditTypeCode\",\"auditResCode\"]}";
-		
+
 		Map<String,List<String>> data =JSON.parse(json,Map.class);
 		System.out.println(data.get("className").size());
 		System.out.println(data);
