@@ -1,8 +1,14 @@
 package test.java.test;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.task.model.RPCResult;
+import com.task.model.ReportRpcParam;
+import com.task.model.ReportRpcResult;
+import com.task.service.ChannelStreamService;
+import com.task.service.LBCChannelStreamService;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -18,12 +24,63 @@ import com.sc.api.service.LnAppOperationService;
 public class SCTest {
 	ClassPathXmlApplicationContext context;
 	LnAppOperationService service;
+	ChannelStreamService channelStreamService;
+	LBCChannelStreamService lbcChannelStreamService;
 	@Before
 	public void init(){
 		context = new ClassPathXmlApplicationContext(
 				new String[] { "applicationConsumer.xml" });
 			context.start();
-		service = (LnAppOperationService) context.getBean("lnAppOperationService"); // get
+		//service = (LnAppOperationService) context.getBean("lnAppOperationService"); // get
+		channelStreamService = (ChannelStreamService) context.getBean("channelStreamService"); // get
+		lbcChannelStreamService = (LBCChannelStreamService) context.getBean("lbcChannelStreamService"); // get
+
+	}
+	@Test
+	public void queryLnAppSubsidiaryInfoTest(){
+		/** 调用接口*/
+		SCRequest request = new SCRequest();
+		SCResult result = null;
+		SCRequestBody body  = new SCRequestBody();
+		body.setAppId(35436824L);
+		Integer subType = LnAppSubsidiary.ASSIST_CHECK_INFO|LnAppSubsidiary.GOODS_INFO|LnAppSubsidiary.CONTACTS_INFO;
+		body.put("subType", subType);
+
+		request.setBody(body);
+		try {
+			result = service.queryLnAppSubsidiaryInfo(request);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		System.out.println("==============查询结果:"+ com.alibaba.fastjson.JSON.toJSONString(result));
+	}
+
+	@Test
+	public void channelStreamTest(){
+		/** 调用接口*/
+		ReportRpcParam req = new ReportRpcParam();
+		Map<String, Object> paramBody = new HashMap<>();
+		paramBody.put("appId",35436824L);
+		req.setParamBody(paramBody);
+		ReportRpcResult result = null;
+		try {
+			result = channelStreamService.channelStream(req);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		System.out.println("==============查询结果:"+ com.alibaba.fastjson.JSON.toJSONString(result));
+	}
+
+	@Test
+	public void lbcChannelStreamTest(){
+		/** 调用接口*/
+		RPCResult result = null;
+		try {
+			result = lbcChannelStreamService.channelStream(10455788L);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		System.out.println("==============查询结果:"+ com.alibaba.fastjson.JSON.toJSONString(result));
 	}
 	/*@Test
 	public  void updateStatusTest() {

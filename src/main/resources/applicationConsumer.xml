@@ -12,7 +12,7 @@
 	<!-- 使用zookeeper注册中心暴露服务地址 url="192.168.150.3:21900"
 	url="127.0.0.1:20992
 	<dubbo:registry group="dev" address="zookeeper://127.0.0.1:2181" />
-	
+
  	
  	<dubbo:reference id="lnAppOperationService" interface="com.sc.api.service.LnAppOperationService" url="127.0.0.1:20992" />
     <dubbo:reference id="lnAppScoreDubboService" interface="com.sc.api.service.LnAppScoreDubboService" url="127.0.0.1:20992" />
@@ -21,12 +21,31 @@
  	<dubbo:reference id="quotaOperationService" interface="com.sc.api.service.QuotaOperationService" url="127.0.0.1:20992" />
  	<dubbo:reference interface="com.sc.api.service.CustAccOperationService" id="custAccOperationService" timeout="60000" url="127.0.0.1:20992"/> 
 	<dubbo:reference interface="com.sc.api.service.LnAppCalcOperationService" id="lnAppCalcOperationService" timeout="60000" url="127.0.0.1:20992"/>
- 	--><!-- 本地 192.168.150.116 开发机 192.168.200.238 -->
-	<dubbo:reference id="task4HyperService" interface="com.hm.service.Task4HyperService" check="false" url="192.168.150.236:20899" retries="0"/>
+ 	--><!-- 本地 192.168.150.116 开发机 192.168.190.238 --><!-- prd:101.201.140.231 sit 123.57.7.179-->
+	<dubbo:reference id="lnAppOperationService" interface="com.sc.api.service.LnAppOperationService" url="192.168.150.144:20993" />
 
-    <dubbo:reference id="socialSecurityService" interface="com.eip.service.biz.socialsecurity.inf.SocialSecurityService" check="false" url="192.168.200.238:32036" retries="0"/>
-	<dubbo:reference id="juxlApiService" interface="com.eip.service.biz.juxl.inf.JuxlApiService" check="false" url="192.168.200.238:32036" retries="0"/>
-	<dubbo:reference id="bjAntiFraudService" interface="com.eip.service.biz.bjantifraud.inf.BjAntiFraudService" check="false" url="192.168.200.238:32036" retries="0"/>
-    <dubbo:reference id="xyCreditService" interface="com.eip.service.biz.xinyancredit.inf.XyCreditService" check="false" url="192.168.200.238:32036" retries="0"/>
-
+    <dubbo:reference id="socialSecurityService" interface="com.eip.service.biz.socialsecurity.inf.SocialSecurityService" check="false" url="123.57.7.179:32036" retries="0" timeout="300000"/>
+	<dubbo:reference id="juxlApiService" interface="com.eip.service.biz.juxl.inf.JuxlApiService" check="false" url="192.168.190.238:32036" retries="0"/>
+	<dubbo:reference id="bjAntiFraudService" interface="com.eip.service.biz.bjantifraud.inf.BjAntiFraudService" check="false" url="192.168.190.238:32036" retries="0"/>
+	<dubbo:reference id="xyCreditService" interface="com.eip.service.biz.xinyancredit.inf.XyCreditService" check="false" url="192.168.190.238:32036" retries="0"/>
+	<dubbo:reference id="telOperatorApiService" interface="com.eip.service.biz.teloperator.inf.TelOperatorApiService" check="false" url="123.57.7.179:32036" retries="0"/>
+	<dubbo:reference id="bjBusPlmApiService" interface="com.eip.service.biz.bjplm.inf.BjBusPlmApiService" check="false" url="123.57.7.179:32036" retries="0" timeout="300000"/>
+    <dubbo:reference id="ocrAuthApiService" interface="com.eip.service.biz.webank.inf.OCRAuthApiService" check="false" url="123.57.7.179:32036" retries="0"/>
+	<dubbo:reference id="quotaService" interface="com.eip.service.biz.quota.inf.QuotaService" check="false" url="123.57.7.179:32036" retries="0"/>
+	<dubbo:reference id="bjFkRiskService" interface="com.eip.service.biz.bjfk.inf.BjFkRiskService" check="false" url="123.57.7.179:32036" retries="0"/>
+	<dubbo:reference id="mongoApiService" interface="com.eip.service.mongo.inf.MongoApiService" check="false" url="123.57.7.179:32036" retries="0"/>
+	<dubbo:reference id="busLoanAfService" interface="com.eip.service.biz.bjbus.inf.BusLoanAfService" check="false" url="192.168.190.238:32036" retries="0"/>
+	<dubbo:reference id="ebankH5Service" interface="com.eip.service.biz.ebank.inf.EBankH5Service" check="false" url="123.57.7.179:32036" retries="0"/>
+	<dubbo:reference id="xiehuiApiService" interface="com.eip.service.biz.xiehui.inf.XiehuiApiService" check="false" url="123.57.7.179:32036" retries="0"/>
+	<dubbo:reference id="deviceFingerprintService" interface="com.eip.service.biz.devicefingerprint.inf.DeviceFingerprintService" check="false" url="123.57.7.179:32036" retries="0"/>
+	<dubbo:reference id="unionpayService" interface="com.eip.service.biz.unionpay.inf.UnionpayService" check="false" url="123.57.7.179:32036" retries="0"/>
+	<dubbo:reference id="bjPostLoanService" interface="com.plm.service.BJPostLoanService" check="false" url="123.57.78.243:20898" retries="0" timeout="60000"/>
+	<dubbo:reference id="repayPlanService" interface="com.plm.service.RepayPlanService" check="false" url="123.57.78.243:20898" retries="0"/>
+	<!--<dubbo:reference id="channelStreamService" interface="com.task.service.ChannelStreamService" check="false" url="localhost:20992" retries="0"/>-->
+	<dubbo:reference id="lbcChannelStreamService" interface="com.task.service.LBCChannelStreamService" check="false" url="123.57.7.179:22893" retries="0"/>
+	<dubbo:reference id="mailService" interface="com.eip.service.account.inf.AttachmentMailService" check="false" url="hessian://192.168.190.238:32037"  retries="0"/>
+	<dubbo:reference id="couponOperationService" interface="com.cms.api.inf.CouponOperationService" check="false" url="localhost:20998"  retries="0" timeout="60000"/>
+    <dubbo:reference id="depositAcctQueryService" interface="com.eip.service.biz.depositacct.inf.DepositAcctQueryService" check="false" url="101.201.140.231:32036"  retries="0" timeout="60000"/>
+    <dubbo:reference id="busSignContractService" interface="com.hm.service.BusSignContractService" check="false" url="localhost:20899"  retries="0" timeout="60000"/>
+    <dubbo:reference id="task4HyperService" interface="com.hm.service.Task4HyperService" check="false" url="localhost:20899"  retries="0" timeout="60000"/>
 </beans>

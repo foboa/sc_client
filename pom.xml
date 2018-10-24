@@ -54,7 +54,7 @@
 		<dependency>
 			<groupId>com.sc</groupId>
 			<artifactId>sc_api</artifactId>
-			<version>1.1.1-SNAPSHOT</version>
+			<version>1.1.21-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
@@ -64,7 +64,7 @@
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
-			<version>1.2.4</version>
+			<version>1.2.45</version>
 		</dependency>
 		<dependency>
 			<groupId>com.hm</groupId>
@@ -79,8 +79,66 @@
         <dependency>
             <groupId>com.eip</groupId>
             <artifactId>eip-service</artifactId>
-            <version>1.1.24-SNAPSHOT</version>
+            <version>1.1.39-SNAPSHOT</version>
         </dependency>
+		<dependency>
+			<groupId>cn.com.bsfit</groupId>
+			<artifactId>frms-base</artifactId>
+			<version>4.1.1</version>
+			<classifier>public</classifier>
+		</dependency>
+		<dependency>
+			<groupId>cn.com.bsfit</groupId>
+			<artifactId>bsfit-api</artifactId>
+			<version>1.0.1</version>
+		</dependency>
+        <dependency>
+            <groupId>com.fk</groupId>
+            <artifactId>fk_dubbo_api</artifactId>
+            <version>2.2.7-SNAPSHOT</version>
+        </dependency>
+		<dependency>
+			<groupId>org.tmatesoft.svnkit</groupId>
+			<artifactId>svnkit</artifactId>
+			<version>1.9.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.plm</groupId>
+			<artifactId>plm_dubbo_api</artifactId>
+			<version>1.0.12-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.task</groupId>
+			<artifactId>task_dubbo_api</artifactId>
+			<version>1.1.3-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.caucho</groupId>
+			<artifactId>hessian</artifactId>
+			<version>4.0.7</version>
+		</dependency>
+		<dependency>
+			<groupId>com.cms</groupId>
+			<artifactId>cncms_dubbo_api</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.10</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.8.1</version>
+		</dependency>
+        <dependency>
+            <groupId>com.hm</groupId>
+            <artifactId>hyper_dubbo_api</artifactId>
+            <version>1.0.9-SNAPSHOT</version>
+        </dependency>
+
 	</dependencies>
 	<!-- 构建按版本上传到仓库配置 -->
 	<distributionManagement>

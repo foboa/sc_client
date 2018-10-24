@@ -1,6 +1,6 @@
 package test.java.test.gendocument;
 
-import com.eip.service.mongo.inf.MongoApiService;
+import com.eip.service.biz.wechat.inf.WeChatService;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
@@ -20,14 +20,14 @@ import java.util.Map;
 /**
  * Created by suguanting on 2018/6/4.
  */
-public class GenDocument {
+public class NewGenDocument {
     private Configuration configuration = null;
 
     private  Class clazz;
 
     private String projectName;
 
-    public GenDocument(Class clazz,String projectName) {
+    public NewGenDocument(Class clazz, String projectName) {
         configuration = new Configuration();
         configuration.setDefaultEncoding("UTF-8");
         this.clazz = clazz;
@@ -35,7 +35,7 @@ public class GenDocument {
     }
 
     public static void main(String[] args) throws Exception {
-        GenDocument gen = new GenDocument(MongoApiService.class,"MongoDB");
+        NewGenDocument gen = new NewGenDocument(WeChatService.class,"微信模板信息");
         gen.genDoc();
     }
 
@@ -65,23 +65,6 @@ public class GenDocument {
         }
     }
 
-    private void getData(Map<String, Object> dataMap) {
-        dataMap.put("mavenVersion","123123");
-        dataMap.put("projectName","2342");
-        dataMap.put("serviceName","2342342");
-        dataMap.put("serviceImplName","234234");
-        dataMap.put("methodName","23423");
-        dataMap.put("methodNameAndParams","87645645");
-        dataMap.put("reqParams","87645645");
-        List<FieldDto> fieldList = new ArrayList<>();
-        for(int i=0;i<10;i++){
-            FieldDto filed = new FieldDto();
-            filed.setName("fieldName"+i);
-            filed.setType("String");
-            fieldList.add(filed);
-        }
-        dataMap.put("fieldList",fieldList);
-    }
 
     private <T> void getData(Map<String, Object> dataMap,Class<T> clazz,String projectName) throws ClassNotFoundException {
         dataMap.put("projectName",projectName);
@@ -94,43 +77,73 @@ public class GenDocument {
             MethodDto methodDto = new MethodDto();
             methodDto.setName(method.getName());
             methodDto.setNameAndParams("<![CDATA["+method.toGenericString()+"]]>");
-            Class<?>[] reqParams = method.getParameterTypes();
-            if(reqParams.length>0) {
-                methodDto.setReq(reqParams[0].toString());
-                Class reqClass = reqParams[0];
-                Field[] reqFields = reqClass.getDeclaredFields();
-                List<FieldDto> reqFieldsList = new ArrayList<>();
-                for(Field field : reqFields){
-                    FieldDto fieldDto = new FieldDto();
-                    fieldDto.setName(field.getName());
-                    fieldDto.setType(field.getType().getTypeName());
-                    reqFieldsList.add(fieldDto);
-                }
-                methodDto.setReqFieldList(reqFieldsList);
-            }else{
-                methodDto.setReq("无");
-                methodDto.setReqFieldList(new ArrayList<FieldDto>());
+
+            //生成请求参数
+            genReqParams(methodDto,method);
+
+            //生成返回参数
+            this.genRespParams(methodDto,method);
+            methodList.add(methodDto);
+        }
+        dataMap.put("methodList",methodList);
+    }
+
+    private void genReqParams(MethodDto methodDto,Method method){
+        Class<?>[] reqParams = method.getParameterTypes();
+        if(reqParams.length>0) {
+            methodDto.setReq(reqParams[0].toString());
+            Class reqClass = reqParams[0];
+            Field[] reqFields = reqClass.getDeclaredFields();
+            List<FieldDto> reqFieldsList = new ArrayList<>();
+            for(Field field : reqFields){
+                FieldDto fieldDto = new FieldDto();
+                fieldDto.setName(field.getName());
+                fieldDto.setType(field.getType().getTypeName());
+                reqFieldsList.add(fieldDto);
             }
-            methodDto.setResp("<![CDATA["+method.getGenericReturnType().toString()+"]]>");
-            Type genericReturnType = method.getGenericReturnType();
+            methodDto.setReqFieldList(reqFieldsList);
+        }else{
+            methodDto.setReq("无");
+            methodDto.setReqFieldList(new ArrayList<FieldDto>());
+        }
+    }
+
+    private void genRespParams(MethodDto methodDto,Method method) throws ClassNotFoundException {
+        methodDto.setResp("<![CDATA["+method.getGenericReturnType().toString()+"]]>");
+        Type genericReturnType = method.getGenericReturnType();
+        String typeName = getActualType(genericReturnType);
+        Class respClass = null == typeName ? null : Class.forName(typeName);
+        /*if(genericReturnType instanceof ParameterizedType){
             Type[] actualTypeArguments = ((ParameterizedType)genericReturnType).getActualTypeArguments();
-            Class respClass = null;
-            if(actualTypeArguments[0].getTypeName().indexOf("<")>-1){
-                respClass = Class.forName(actualTypeArguments[0].getTypeName().substring(0,actualTypeArguments[0].getTypeName().indexOf("<")));
-            }else{
-                respClass = Class.forName(actualTypeArguments[0].getTypeName());
-            }
+            respClass = Class.forName(actualTypeArguments[0].getTypeName());
+        }else{
+            respClass = Class.forName(method.getGenericReturnType().toString());
+        }*/
+        if (null != respClass) {
             Field[] respFields = respClass.getDeclaredFields();
             List<FieldDto> respFieldsList = new ArrayList<>();
-            for(Field field : respFields){
+            for (Field field : respFields) {
                 FieldDto fieldDto = new FieldDto();
                 fieldDto.setName(field.getName());
                 fieldDto.setType(field.getType().getTypeName());
                 respFieldsList.add(fieldDto);
             }
             methodDto.setRespFieldList(respFieldsList);
-            methodList.add(methodDto);
+        }else{
+            methodDto.setRespFieldList(new ArrayList<FieldDto>());
         }
-        dataMap.put("methodList",methodList);
+
+    }
+
+    private String getActualType(Type genericReturnType){
+        String typeName = null;
+        if(genericReturnType instanceof ParameterizedType){
+            Type[] actualTypeArguments = ((ParameterizedType)genericReturnType).getActualTypeArguments();
+            //System.out.println("resp Generic:"+actualTypeArguments[0].getTypeName());
+            typeName = getActualType(actualTypeArguments[0]);
+        }else{
+            typeName = genericReturnType.getTypeName();
+        }
+        return typeName;
     }
 }
